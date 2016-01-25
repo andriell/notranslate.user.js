@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name notranslate
 // @namespace https://github.com/andriell
-// @description Мой самый первый юзерскрипт
+// @description Добавляет класс notranslate
 // @author Рыбалко А.М.
 // @license MIT
 // @version 1.0
@@ -10,7 +10,7 @@
 (function (window, undefined) {
     function addClass(items) {
         for(var i = 0; i < items.length; i++) {
-            items[i].className += " notranslate";
+            items[i].className += ' notranslate';
         }
     }
     addClass(document.getElementsByTagName('code'));
